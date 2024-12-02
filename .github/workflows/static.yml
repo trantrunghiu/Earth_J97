@@ -28,8 +28,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload tất cả các thư mục chứa tệp cần thiết (src, styles, scripts)
-          path: './src, ./js, ./css, ./asset'
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
