@@ -1,5 +1,5 @@
 document.addEventListener("click", function () {
-  var audio = new Audio("../asset/music/music.mp3");
+  var audio = new Audio("./asset/music/music.mp3");
   audio.play();
   document.removeEventListener("click", arguments.callee);
 });
@@ -18,11 +18,11 @@ function handleSelectChange(event) {
     selectedValue == "720p"
   ) {
     // Chọn ảnh phù hợp với chất lượng đã chọn
-    imgElement.src = `../asset/image/${selectedValue}.png`; // Đặt tên ảnh tương ứng
+    imgElement.src = `./asset/image/${selectedValue}.png`; // Đặt tên ảnh tương ứng
     imgElement.style.display = "block"; // Hiển thị ảnh
     heartsContainer.innerHTML = ""; // Xóa trái tim khi chọn các chất lượng khác
   } else if (selectedValue == "1080p") {
-    imgElement.src = `../asset/image/1080p.gif`; // Đặt tên ảnh tương ứng
+    imgElement.src = `./asset/image/1080p.gif`; // Đặt tên ảnh tương ứng
     imgElement.style.display = "block"; // Hiển thị ảnh
 
     // Tạo hiệu ứng trái tim bay liên tục
@@ -31,7 +31,7 @@ function handleSelectChange(event) {
       heart.classList.add("heart");
 
       // Thay emoji trái tim bằng file SVG từ thư mục assets/images
-      heart.innerHTML = `<img src="../asset/image/heart.svg" width="40" height="40" />`;
+      heart.innerHTML = `<img src="./asset/image/heart.svg" width="40" height="40" />`;
 
       // Đặt vị trí ngẫu nhiên cho trái tim
       heart.style.position = "absolute";
