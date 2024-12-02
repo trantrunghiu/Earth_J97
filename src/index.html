@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/script.js" defer></script>
+
+    <title>Tinh tú J97</title>
+  </head>
+  <body>
+    <div class="root">
+      <!-- Vùng hiển thị hình ảnh -->
+      <img class="image" id="image" />
+      <div class="custom-select">
+        <select onchange="handleSelectChange(event)">
+          <option value="">Open this select menu</option>
+          <option value="144p">144p</option>
+          <option value="240p">240p</option>
+          <option value="720p">720p</option>
+          <option value="1080p">1080p</option>
+        </select>
+      </div>
+      <!-- Vùng để tạo hiệu ứng trái tim -->
+      <div id="hearts-container"></div>
+    </div>
+  </body>
+</html>
